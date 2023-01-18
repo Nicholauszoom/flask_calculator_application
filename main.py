@@ -5,7 +5,7 @@ from flask import jsonify
 app = Flask(__name__)
 
 
-@app.route("/api/calculate/Area/rectangle")
+@app.route("/api/calculate/Area/rectangle/?width=&height=")
 def calculate_area_of_rectangle():
     width = int(request.args.get('width'))
     height = int(request.args.get('height'))
